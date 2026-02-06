@@ -1,0 +1,91 @@
+body{
+    background-color:rgba(0, 0, 77, 0.356);
+    color:white;
+}
+.topSection{
+    background-color:white;
+    color:rgba(0, 0, 77, 0.356);
+    border: 4px solid rgba(0, 0, 44, 0.416);
+}
+h1 {
+    padding-top: 12px;
+    text-align: center;
+}
+.selectors{
+    margin: 10px;
+}
+.topSection, .organizer div{
+    background-image: url("scallop-top.png"); 
+    background-repeat: repeat-x;
+    background-position: top center;
+    background-size: auto 40px; 
+    padding: 5px; 
+}
+.options, .input, .button, .topSection{
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1); 
+}
+.options{
+    background-color: lightgray;
+    color: white;
+    border: 5px rgb(26, 183, 245);
+}
+.input{
+    background-color: rgba(0, 0, 77, 0.356);
+    color:white;
+}
+.button{
+    border: 2px;
+    background: #fff0f5;
+    padding: 5px;
+    margin: 2px;
+    color: rgba(0, 0, 77, 0.356);
+}
+.button:hover, .options:hover{
+    transform: scale(1.05);
+    opacity: 0.8;
+    background-color: rgb(190, 190, 250);
+}
+.organizer{
+    display:flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    width: 100vh;
+    padding: 10px;
+    color: rgba(0, 0, 44, 0.416);
+}
+.organizer div{
+    height:300px;
+    display:flex;
+    flex-direction:column;
+
+    border: 2px solid rgba(0, 0, 44, 0.416);
+    padding:10px;
+    border-radius: 20px;
+
+    background-color: white; 
+}
+.organizer h2{
+    margin: 0 0 8px 0;
+    padding-top:20px;
+    width: 140px;
+    text-align: center;
+    flex-shrink: 0;
+    color: rgba(0, 0, 77, 0.356);
+}
+.organizer ol{
+    margin:0;
+    padding-left: 10px;
+    overflow-y: auto;         
+    flex-grow: 1;             
+    font-size:large;
+}
+/* add box inside each day section, scrollable, fixed size for entire organizer
+then customize colors for each day, and add border color
+text will be white
+body background maybe a dark blue
+add cute dividers lines, fonts, decals maybe
+animations?
+add a delete list item button
+add a clear list button
+add a bar along side that fills as li get checked off

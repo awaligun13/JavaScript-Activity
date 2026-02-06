@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="index.js" defer></script>
+
+</head>
+<body>
+
+    <div class = "topSection">
+    <h1>Avas Weekly Task List!<br></h1>
+    </div>
+
+    <div class = "selectors">
+    <!--Day Selection-->
+    <label for="options">Choose an option:</label>
+    <select name="options" class = "options" id="options">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+    </select>
+
+    <!--Add to a list-->
+    <input class = "input" id = "myText" type="text" placeholder="New Task"> 
+    <button class = "button" id = "myButton">Add to List</button>
+    <button class = "button" id = "delButton">Delete Last Entry</button>
+    <button class = "button" id = "clearList">Clear List</button>
+
+    </div>
+    <!--Box for lists-->
+    <div class="organizer">
+        <div class = "dayM">
+        <h2>Monday</h2>
+            <ol id="Monday"></ol>
+        </div>
+        <div class = "dayT">
+        <h2>Tuesday</h2>
+            <ol id="Tuesday"></ol>
+        </div>
+        <div class = "dayW">
+        <h2>Wednesday</h2>
+            <ol id="Wednesday"></ol>
+        </div>
+        <div class = "dayTh">
+        <h2>Thursday</h2>
+            <ol id="Thursday"></ol>
+        </div>
+        <div class = "dayF">
+        <h2>Friday</h2>
+            <ol id="Friday"></ol>
+        </div>
+        <div class = "dayS">
+        <h2>Saturday</h2>
+            <ol id="Saturday"></ol>
+        </div>
+        <div class = "daySu">
+        <h2>Sunday</h2>
+            <ol id="Sunday"></ol>
+        </div>
+    </div>
+
+</body>
+</html>
